@@ -6,14 +6,14 @@
 
     <form method="post">
         <label for ="title">Title of post:</label>
-        <input type="text" name="title" value="" />
+        <input type="text" name="title" value="{{request.form['title']}}" />
         <span class="error">{{title_error}}</span>
 
         <br/>
         <br/>
 
         <label for="body">Contents:</label>
-        <input type="text" name="body" value="" />
+        <input type="text" name="body" value="{{request.form['body']}}" />
         <span class="error">{{body_error}}</span>
 
         <br />
