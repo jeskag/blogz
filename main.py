@@ -29,10 +29,10 @@ def add_blog():
         body_error = ""
 
         if len(blog_title) < 1:
-            title_error = "Invalid title"
+            title_error = "Please enter a title."
         
         if len(blog_body) < 1:
-            body_error = "Invalid body"
+            body_error = "Please enter the body."
 
         if not title_error and not body_error:
             new_blog = Blog(blog_title, blog_body)
