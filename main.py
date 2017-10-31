@@ -162,8 +162,8 @@ def get_individual_blog():
 
 @app.route('/')
 def index():
-    blogs = Blog.query.order_by(Blog.id.desc()).all()
-    return render_template('index.html', title="Blog posts by Author", blogs=blogs)
+    users = User.query.order_by(User.id.desc()).all()
+    return render_template('index.html', title="Blog posts by Author", users=users)
 
 if __name__ == '__main__':
     app.run()

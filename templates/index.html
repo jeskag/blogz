@@ -4,11 +4,11 @@
 
     <h1>Blog Userz</h1>
 
-        {% for blog in blogs %}
+        {% for user in users %}
         <div class="content">        
             <h3>
             <ul>
-                <li><a href="/blog?user={{ blog.owner_id }}">{{ blog.owner.username }}</a></li>
+                <li><a href="/user?user={{ user.owner_id }}">{{ user.username }}</a></li>
             </ul>
             </h3>
         </div>
